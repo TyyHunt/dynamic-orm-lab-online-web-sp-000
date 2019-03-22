@@ -17,7 +17,7 @@ class InteractiveRecord
     table_info.each do |column|
      column_names << column["name"]
     end
-    column_names
+    column_names.compact
   end
 
   def initialize(options={})
