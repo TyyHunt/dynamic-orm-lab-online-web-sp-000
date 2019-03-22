@@ -25,4 +25,15 @@ class InteractiveRecord
       self.send("#{key}=", value)
     end
   end
+
+  def table_name_for_insert
+    self.class.table_name_for_insert
+  end
+
+  def col_names_for_insert
+    self.class.col_names.delete_if? {|value| value == nil}.join(", ")
+  end
+
+
+  
 end
