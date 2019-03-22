@@ -35,5 +35,5 @@ class InteractiveRecord
   end
 
 
-  
+
 end
